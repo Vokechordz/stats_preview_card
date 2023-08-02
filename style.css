@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Red Hat Display', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+body {
+    background-color:  hsl(233, 47%, 7%);
+    display: flex;
+    font-size: 15px;
+    align-items: center; 
+    color: white;
+    font-family:  'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+.overall {
+    background-color: hsl(244, 38%, 16%);
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.column1 {
+    padding: 13%;
+}
+
+.column1 h1 {
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+p.firstp {
+   
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 20px;
+}
+
+p.head {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+p.par {
+    font-size: 9px;
+    color:  hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 2px;
+}
+
+.total {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.column2 {
+    background-size:cover;
+   
+   
+    position: relative;
+}
+
+.column2 img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  hsla(244, 38%, 16%,0.6);
+}
+
+
+
+@media only screen and (max-width:425px) {
+    body {
+        text-align: center;
+    }
+
+    .overall {
+        grid-template-columns: 1fr;
+    }
+
+    .column2 {
+        order: -1;
+    }
+
+    .column1 {
+        padding: 8%;
+    }
+
+    .total {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .first, .second, .third {
+        margin-bottom: 20px;
+    }
+
+    .column1 h1 {
+        font-size: 25px;
+    }
+
+    p.firstp {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:552px) and (min-width:425px) {
+    .column1 h1 {
+        font-size: 22px;
+    }
+
+    p.firstp {
+        font-size: 12px;
+    }
+
+    .column1 {
+        padding: 8%;
+    }
+
+    p.head {
+        font-size: 20px;
+    }
+
+    p.par {
+        font-size: 8.5px;
+    }
+
+    .total {
+        margin-top: 28px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
